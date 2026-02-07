@@ -5,7 +5,7 @@ print(random.randint(1,10))
 a = 10
 b = 20
 print(globals())
-
+ 
 # PEP 8 (Coding Style)
 def greet_user(name):
     print(f"Hello,{name}!")
