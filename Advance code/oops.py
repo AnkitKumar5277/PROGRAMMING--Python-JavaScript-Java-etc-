@@ -1,5 +1,4 @@
 #oops example
-'''
 class Number:
   def sum(self):
     return self.a + self.b
@@ -8,10 +7,9 @@ n.a = 4
 n.b = 6 
 s = n.sum()
 print(s)
-'''
 
 # PascalCase
-'''EmployeeName''' # used in class
+# EmployeeName # used in class
 
 # camelCase
 '''isNumeric, isFloat'''
@@ -22,7 +20,6 @@ class Employee:
 include methods & variables'''
 
 # object
-'''
 class RailwayForm:
   formType = "RailwayForm"
   def printData(self): # using self
@@ -33,59 +30,61 @@ ankitApp = RailwayForm() # class ka object
 ankitApp.name = "ankit"
 ankitApp.train = "Rajdhani Express"
 ankitApp.printData() # print
-'''
-# another example
-''''
-class Remote():
-  pass
-class Player:
-  def moveRight(self):
-    pass
-  def moveLeft(self):
-    pass
-  def moveTop(self):
-    remobj = Remote() #instantiation
-    playobj = Player()
-    
-    if(remobj.isLeftPressed()):
-      playobj.moveLeft()
-'''
+
+# Encapsulation
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.__marks = marks   # Private
+    def show_marks(self):
+        print("Marks:", self.__marks)
+s1 = Student("Ankit", 90)
+print(s1.name)      # Allowed
+s1.show_marks()     # Allowed
+
+# Data abstraction 
+class Car:
+    def start(self):
+        print("Car started")
+    def drive(self):
+        print("Car is driving")
+my_car = Car()
+my_car.start() # user use only
+my_car.drive() # user use only
+
+# Polymorphism 
+class Dog:
+    def sound(self):
+        print("Dog barks")
+class Cat:
+    def sound(self):
+        print("Cat meows")
+d = Dog()
+c = Cat()
+d.sound()
+c.sound()
 
 # class Attribute
-'''
 class Employee:
   company = "Google"
 ankit = Employee() # class ka obj
 kumar = Employee() # object instantiation
 print(ankit.company) # ankit ki company
 print(kumar.company) # class attribute
-
 Employee.company = "Microsoft" # change class attribute
-
 print(ankit.company)
 print(kumar.company)
-'''
-#instance attribute
-'''
-class Employee:
-  company = "Facebook" #object
-  salary = 100         #object                 #2
 
-jack = Employee() # object instantiation
-oggy = Employee() # object instantiation
-
-jack.salary = 800 # instantce attribute         #1
-# ise object ka attribute bhi khete hai
-# object se associate karde
-
-# print(jack.company) # class attribute
-# print(oggy.company) # class att ribute
-
-print(jack.salary) # print by instance attribue #1
-print(oggy.salary) #                   print by #2
+#instance attribute & class attribute
+Class Sample 
+  name = "ankit"	  # class attribute
+obj = Sample() 	  # objects (instances
+obj.name = "vikky"	  # instance attribute / you cant change but you add instance attrubute 
+sample.name = "vikky" # class attribute / you can change class attrubute 
+print(sample.name) 
+print(obj.name) 
 
 # print(jack.address) -> error address is not present in instance / class attribue
-'''
 
 # self
 '''
@@ -162,4 +161,5 @@ class Employee:
 harry = Employee("Harry", 100, "YouTube")
 # harry = Employee() --> This throws an error (missing 3 required positional arguments:)
 harry.getDetails()
+
 
