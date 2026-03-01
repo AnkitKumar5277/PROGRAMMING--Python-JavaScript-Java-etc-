@@ -118,9 +118,9 @@ c1 = Calculator()
 print(c1.add(5, 3))      # 2 arguments
 print(c1.add(5, 3, 2))   # 3 arguments
 
+
 # class method is brother of static method
 # class k liye kaam karna cls method se
-'''
 class Employee:
   company = "Sony"
   salary = 10
@@ -224,6 +224,7 @@ n = Number(9)
 print(n)
 print(len(n))
  ''' 
+
 
 
 
