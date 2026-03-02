@@ -133,9 +133,7 @@ print(Student.school)
 # ABC School
 # XYZ School
 
-
 # property method / getter
-'''
 class Employee:
   company = "Bharat Gas"
   salary = 5600
@@ -147,77 +145,78 @@ class Employee:
 e = Employee()
 print(e.totalSalary)
 # e.totalSalary = 5000 -> does not change we need to setter
-'''
 
 # setter method ->
-'''
 class Employee:
   company = "Bharat Gas"
   salary = 5600
   salarybonus = 400
   #totalSalary = 6100
-
   @property
   def totalSalary(self):
     return self.salary + self.salarybonus
-
   @totalSalary.setter
   def totalSalary(self,val):
     self.salarybonus = val - self.salary
-
 e = Employee()
 print(e.totalSalary) 
 e.totalSalary = 5800
 print(e.salary)
 print(e.salarybonus)
-'''
 
 # operator overloading
-'''
 class Number:
   def __init__(self, num):
     self.num = num
-  
   def __add__(self, num2):
     print("lets add")
     return self.num + num2.num
-    
   def __mul__(self, num2):
     print("lets multiply")
     return self.num * num2.num
-
 n1 = Number(4)
 n2 = Number(6)
 sum = n1 + n2
 mul = n1 * n2
 print(sum)
 print(mul)
-'''
 
 # other dunder method
-'''
 class Number:
   def __init__(self, num):
     self.num = num
-
   def __add__(self,num2):
     print("lets")
-
   def __mul__(self,num2):
     print("lets add")
     return self.num * num2.num
-
   def __str__(self):
     return f"Decimal Number: {self.num}"
-
   def __len__(self):
     return 1
-
 n = Number(9)
 print(n)
 print(len(n))
- ''' 
 
+# decorator function
+def my_decorator(func):
+    def wrapper():
+        print("Before function runs")
+        func()
+        print("After function runs")
+    return wrapper
+
+# function to decorate
+@my_decorator
+def say_hello():
+    print("Hello!")
+say_hello()
+
+# Dictionary comprehension
+numbers = [1, 2, 3, 4]
+square_dict = {n: n*n for n in numbers}
+print(square_dict)
+{1: 1, 2: 4, 3: 9, 4: 16}
 
 
 
