@@ -15,3 +15,11 @@ name = "Charlie"
 age = 35
 print(f"My name is {name} and I'm {age} years old.") 
 # Output: My name is Charlie and I'm 35 years old.
+
+# Create a list
+my_list = ["apple", "banana", "orange", "grape"]
+# Accessing elements using index
+print("First element:", my_list[0])  # Output: apple
+print("Last element:", my_list[-1])   # Output: grape (negative index for last element)
+# Accessing a range of elements (slicing)
+print("First two elements:", my_list[0:2])  # Output: ['apple', 'banana']
