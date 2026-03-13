@@ -32,10 +32,19 @@ print(squared_numbers)  # Output: [1, 4, 9, 16, 25]
 
 # Example: Filter even numbers from a list
 numbers = [1, 2, 3, 4, 5, 6, 7, 8]
-
 # Define a function to check if a number is even
 def is_even(num):
     return num % 2 == 0
 # Use filter() to get only even numbers
 even_numbers = list(filter(is_even, numbers))
 print(even_numbers)  # Output: [2, 4, 6, 8]
+
+# reduce
+from functools import reduce
+# Example 1: Sum all numbers in a list
+numbers = [1, 2, 3, 4]
+result = reduce(lambda x, y: x + y, numbers)
+print(result)  # Output: 10 (1+2+3+4)
+# Example 2: Multiply all numbers in a list
+result = reduce(lambda x, y: x * y, numbers)
+print(result)  # Output: 24 (1*2*3*4)
