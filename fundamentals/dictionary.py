@@ -10,3 +10,6 @@ print(my_dict)  # Output: {'name': 'Amit', 'age': 21, 'city': 'Delhi'}
 my_dict.update({"job": "Student", "hobby": "Reading"})
 print(my_dict)  # Output: {'name': 'Amit', 'age': 21, 'city': 'Delhi', 'job': 'Student', 'hobby': 'Reading'}
 
+fruits = ["apple", "banana", "orange"]
+print("apple" in fruits)  # Output: True
+print("grape" in fruits)  # Output: False
