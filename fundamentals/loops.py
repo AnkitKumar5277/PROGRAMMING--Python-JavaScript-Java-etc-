@@ -1,3 +1,15 @@
+# Python Program to Create Pyramid Patterns
+# *
+# * *
+# * * *
+# * * * *
+# * * * * *
+rows = int(input("Enter number of rows: "))
+for i in range(rows):
+  for j in range(i+1):
+    print("*", end="")
+  print()
+
 # Python Program to Add Two Matrices
 # Program to add two matrices using nested loop
 X = [[12,7,3],
