@@ -1,4 +1,3 @@
-# Python Program to Convert Decimal to Binary Using Recursion
 
 
 # Python Program to Find Sum of Natural Numbers Using Recursion
