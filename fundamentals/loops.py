@@ -1,3 +1,45 @@
+# Python Program to Convert Decimal to Binary Using Recursion
+
+
+# Python Program to Find Sum of Natural Numbers Using Recursion
+def sum(n):
+  if n<=1:
+    return n
+  else
+    return n + sum(n-1)
+num = 16
+if num < 0:
+   print("Enter a positive number")
+else:
+   print("The sum is",recur_sum(num))
+# The sum is 136
+
+# Python Program to Display Fibonacci Sequence Using Recursion
+# Python program to display the Fibonacci sequence
+def recur_fibo(n):
+   if n <= 1:
+       return n
+   else:
+       return(recur_fibo(n-1) + recur_fibo(n-2))
+nterms = 10
+if nterms <= 0:
+   print("Plese enter a positive integer")
+else:
+   print("Fibonacci sequence:")
+   for i in range(nterms):
+       print(recur_fibo(i))
+# Fibonacci sequence:
+# 0
+# 1
+# 1
+# 2
+# 3
+# 5
+# 8
+# 13
+# 21
+# 34
+
 # Python Program to Create Pyramid Patterns
 # *
 # * *
