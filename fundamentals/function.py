@@ -15,3 +15,8 @@ dec = 34
 converttobinary(dec)
 print()
 # 100010
+
+# current Python file ke saare global variables aur functions ka dictionary print karta hai.
+a = 10
+b = 20
+print(globals())
