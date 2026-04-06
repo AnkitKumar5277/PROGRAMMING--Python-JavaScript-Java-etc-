@@ -1,3 +1,27 @@
+# Function definition
+def greet():
+    print("Hello! Welcome to Python functions.")
+
+# Function call
+greet()
+
+# 🔁 8️⃣ Recursion (Function Calling Itself)
+# Concept: Jab ek function apne aap ko call karta hai.
+# Example – Factorial using recursion
+def factorial(n):
+    if n == 1:
+        return 1
+    else:
+        return n * factorial(n -1)
+print("factorial of 5 is:", factorial(5))
+
+# 🧠 7️⃣ Return Statement
+# Concept: Function se value return karne ke liye use hota hai.
+def square(num):
+    return num * num
+result = square(6)
+print("Square is:", result)
+
 # area_of_triangle
 def area_of_triangle(base, height):
     area = 0.5 * base * height
