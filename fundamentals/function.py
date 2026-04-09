@@ -1,4 +1,11 @@
-
+   
+#challenge
+def sum_of_digits(number):
+    return sum(int(digit) for digit in str(number))
+# Example usage:
+number = 12345
+result = sum_of_digits(number)
+print(result)  # Output: 15
 
 
 # The L.C.M. is 216
