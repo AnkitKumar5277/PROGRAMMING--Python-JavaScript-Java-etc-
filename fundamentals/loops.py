@@ -1,3 +1,69 @@
+
+
+# Example 3: Without using enumerate()
+l = [21, 44, 35, 11]
+for index in range(len(l)):
+    value = l[index]
+    print(index, value)
+# Output
+# 0 21
+# 1 44
+# 2 35
+# 3 11
+
+# Example 2: Start the indexing with non zero value
+l  = [21, 44, 35, 11]
+for index, val in enumerate(l, start = 1):
+    print(index, val)
+# Output
+# 1 21
+# 2 44
+# 3 35
+# 4 11
+
+# Python Program to Access Index of a List Using for Loop
+l = [21, 44, 35, 11]
+for index, val in enumerate(l):
+    print(index, val)
+#     # Output
+# 0 21
+# 1 44
+# 2 35
+# 3 11
+
+num = 1634
+order = len(str(num))
+sum = 0
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** order
+   temp //= 10
+# display the result
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+
+# Python Program to Check Armstrong Number
+num = int(input("Enter a number: "))
+sum = 0
+temp = num
+while temp > 0:
+   digit = temp % 10
+   sum += digit ** 3
+   temp //= 10
+if num == sum:
+   print(num,"is an Armstrong number")
+else:
+   print(num,"is not an Armstrong number")
+# Output 1
+# Enter a number: 663
+# 663 is not an Armstrong number
+# Output 2
+# Enter a number: 407
+# 407 is an Armstrong number
+
 terms = int(input("How many terms? "))
 # use anonymous function
 result = list(map(lambda x: 2 ** x, range(terms)))
