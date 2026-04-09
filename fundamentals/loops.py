@@ -1,3 +1,16 @@
+#challenge
+def fibonacci_less_than(n):
+    # Start with the first two Fibonacci numbers
+    sequence = [0, 1]
+    # Keep adding numbers to the list until the next one is too big
+    while True:
+        next_number = sequence[-1] + sequence[-2]  # Add the last two numbers
+        if next_number >= n:  # Stop if the next number is too big
+            break
+        sequence.append(next_number)  # Add the next number to the list
+    return sequence
+
+
 # Python Program to Find LCM
 # Python Program to find the L.C.M. of two input number
 def compute_lcm(x, y):
