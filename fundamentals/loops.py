@@ -1,3 +1,17 @@
+# Program to transpose a matrix using a nested loop
+X = [[12,7],
+    [4 ,5],
+    [3 ,8]]
+result = [[0,0,0],
+         [0,0,0]]
+for i in range(len(X)):
+   for j in range(len(X[0])):
+       result[j][i] = X[i][j]
+for r in result:
+   print(r)
+# [12, 4, 3]
+# [7, 5, 8]
+
 # Python Program to Find the Sum of Natural Numbers
 num = 16
 if num < 0:
