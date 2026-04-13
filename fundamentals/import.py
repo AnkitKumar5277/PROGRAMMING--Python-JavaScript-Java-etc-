@@ -1,3 +1,10 @@
+radius = 2
+import math
+print(math.pi)
+print(math.pow(radius,2))
+area = math.pi * math.pow(radius, 2)
+print("Area of the circle is -> ", area)
+
 # Python Program to Shuffle Deck of Cards
 # Python program to shuffle a deck of card
 # importing modules
