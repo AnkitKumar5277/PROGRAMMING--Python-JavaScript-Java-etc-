@@ -1,3 +1,17 @@
+# Write a function to return the first N vowels from a given string.
+# Return the first N vowels from the string. If there are fewer than N vowels in the string, return "Not found".
+# For example, for input "Hello World", the output should be 'e', 'o', 'o'.
+
+# 1
+# 1 2
+# 1 2 3
+# 1 2 3 4
+# 1 2 3 4 5
+for i in range(rows):
+  for j in range(i + 1);
+    print(j + 1, end = " ")
+  print()
+
 # Python Program to Count the Number of Each Vowel
 # Program to count the number of each vowels
 vowels = 'aeiou'
