@@ -1,3 +1,12 @@
+dir = r'C:\pramod\n.txt'
+print(dir)
+
+dir = r"C:\pramod\t.txt"
+print(dir)
+
+dir = "C:\pramod\t.txt"
+print(dir)
+
 # program_to_count_the_number_of_capital_letter.py
 with open("SOME_LARGE_FILE.txt","r") as file:
     count = 0
