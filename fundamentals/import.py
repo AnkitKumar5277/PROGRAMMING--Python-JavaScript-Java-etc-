@@ -1,3 +1,6 @@
+import keyword
+print(keyword.kwlist)
+
 radius = 2
 import math
 print(math.pi)
