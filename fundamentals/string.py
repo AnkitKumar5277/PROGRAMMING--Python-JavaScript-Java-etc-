@@ -1,3 +1,12 @@
+n = input("Enter your name : ")
+m = input("Enter your marks : ")
+p = input("Enter your phone number : ")
+
+template = " The name of the student is {}, his marks are {} phone number is {} "
+
+output = template.format(n,m,p)
+print(output)
+
 # split()
 x = "this is example of split method"
 a = x.split()
