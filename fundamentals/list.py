@@ -1,3 +1,9 @@
+from functools import reduce
+l = [3,8,455,2,5,45]
+a = reduce(max,l)
+print(max(7,34))
+print(a)
+
 # filter que.
 l = [1,2,3,4,5,6,7,8,9,10,50,20,10,2,1,5]
 a = filter(lambda a: a%5==0, l)
