@@ -1,3 +1,8 @@
+# filter que.
+l = [1,2,3,4,5,6,7,8,9,10,50,20,10,2,1,5]
+a = filter(lambda a: a%5==0, l)
+print(list(a))
+
 # write a list comprehension to print a list which contains the multipication table of a user entered number
 n = int(input("Enter your number : "))
 table = [ n*i for i in range(1,11) ]
