@@ -1,3 +1,27 @@
+# Example 4 add / Raising exceptions
+def increment(num):
+  try:
+    return int(num) + 1
+  except:
+    raise ValueError("This is not good- Harry")
+
+a = increment('D50')
+print(a)
+
+# Example 3 multiple errors
+try:
+  a = int(input("Enter a number : "))
+  c = 1/a
+  print(c)
+
+except ValueError as e:
+  print("Please Enter a valid Value")
+
+except ZeroDivisionError as e:
+  print("Make sure you are not dividing by 0")
+
+print("Thanks for using this code")
+
 # Example 2 error of result
 try:
   a = int(input("Enter a number : "))
@@ -26,7 +50,6 @@ while(True):
 print("Thanks for playing this game")  
 
 # write a program to display a / b where a and b are integers if b = 0, display infinite by handling the zero division error
-'''
 a = int(input("enter number a : "))
 b = int(input("enter number b : "))
 try:
