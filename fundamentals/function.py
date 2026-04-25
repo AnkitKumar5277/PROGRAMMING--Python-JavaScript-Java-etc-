@@ -1,3 +1,14 @@
+# global & local variable
+a = 4 # global variable
+def func1():
+  global a
+  print(f"Print statement 1: {a}")
+  a = 8 # local variable if global keyword is not used
+  print(f"print statement 2: {a}")
+
+func1()
+print(f"print statement 3: {a}")
+
 def greet():
     print("Hello, Welcome to Python World!")
     
