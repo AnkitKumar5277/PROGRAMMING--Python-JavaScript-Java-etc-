@@ -1,19 +1,8 @@
-# lambda function
-def func(a):
-  return a+5
-
-x = 4
-print(func(x))
-
-# another method
-func = lambda a: a + 8
-square = lambda x: x*x
-sum = lambda a, b, c: a+b+c
-
-x = 2
-print(func(x))
-print(square(x))
-print(sum(x,1,3))
+# input function
+def say_hello_user(name):
+    print("Hello,", name)
+user_name = input("Enter the name : \n")
+say_hello_user(user_name)
 
 # global & local variable
 a = 4 # global variable
@@ -22,96 +11,31 @@ def func1():
   print(f"Print statement 1: {a}")
   a = 8 # local variable if global keyword is not used
   print(f"print statement 2: {a}")
-
 func1()
 print(f"print statement 3: {a}")
 
-def greet():
-    print("Hello, Welcome to Python World!")
-    
-greet()
-greet()
-greet()
+# lambda function
+def func(a):
+  return a+5
+x = 4
+print(func(x))
+# another method
+func = lambda a: a + 8
+square = lambda x: x*x
+sum = lambda a, b, c: a+b+c
+x = 2
+print(func(x))
+print(square(x))
+print(sum(x,1,3))
 
-print("dasdadads")
-greet()
-
-def _123():  # identifier rule is failed
-    print("Hi1")
-
-
-def _():
-    print("Hi")
-
-
-_()
-_123()
-
-
-def pramod123():
-    print("Hello")
-
-
-def h():
-    print("hello")
-    print("I am part of h function ?")
-
-print("Not a Part of Functions")
-
-def first_part_last_name():
-    pass  # # in future i will complete this functions
-
-
-def greet_to_all_of_you():
-    print("Hello, Everyone")
-
-
-def greet():
-    print("Yes")
-    greet_to_all_of_you()
-
-greet()
-
-def greet_by_name(name):
-    print("Hello,", name)
-    print(f"Hello, {name}")
-
-greet_by_name("Pramod")
-greet_by_name(123)
-greet_by_name(3.14)
-
-
-
-def say_hello_user(name):
-    print("Hello,", name)
-user_name = input("Enter the name : \n")
-say_hello_user(user_name)
-
-
-def print_mul_arguments(*args):
-    # *args -> List
-    for i in args:
-        print(i)
-print_mul_arguments("pramod1\n")
-print_mul_arguments("pramod", "amit", "lucky")
-print_mul_arguments("amit", 10, True, False, "PRAMOD")
-
-
+# args = toppings
 def make_pizza(*toppings):
     print(toppings)
     for i in toppings:
         print(i)
-pramod = make_pizza("tomato","olives")
-jayati = make_pizza("pineapple","olives","corn","paneer")
+pramod = make_pizza("tomato","olives", "\n")
+jayati = make_pizza("pineapple","olives","corn","paneer", "\n")
 vinay = make_pizza("tomato")
-
-
-def max(*args):
-    for i in args:
-        print(i)
-r1 = max(1, 2, 3, 4, 6)
-r2 = max(1, 2, 3)
-r2 = max(2, 3)
 
 def outer_function():
     var1 = 30 # local
